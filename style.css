@@ -1,0 +1,109 @@
+:root {
+    --page-color:#2f0f2a;
+    --header-color: #FFE6FF;
+    --emphasis-font: Ubuntu, sans-serif;
+}
+
+html {
+    height: 100%;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+}
+
+body {
+    background-color: var(--page-color);
+    background-image: url("assets/denim.png");
+    font-family: system-ui, Ubuntu, sans-serif;
+    line-height: 24px;
+    max-width: 50em;
+    margin: 0 auto 80px;
+}
+
+h1 {line-height: 32px; font-family: var(--emphasis-font);}
+h2, h3 {font-family: var(--emphasis-font);}
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 1ch;
+}
+
+img, video {display: block; margin-left: auto; margin-right: auto;}
+
+.name {
+    margin-left: 1em;
+    display: inline-block;
+    background: repeating-linear-gradient(90deg, deeppink, deeppink 4px, rgba(0,0,0,0) 0, rgba(0,0,0,0) 17px);
+    width: calc(35%);
+}
+
+header {
+    color: black;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    transition-duration: 0.2s;
+    color: deeppink;
+}
+a:visited {
+    color: deeppink;
+    text-decoration: inherit;
+}
+a:hover {
+    transition-duration: 0.4s;
+    color:dodgerblue;
+}
+
+button {
+    background-color: #33243e;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 4px 16px;
+    font-size: 16px;
+    font-family: var(--emphasis-font);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.header-icon {
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+
+    float: right;
+    image-rendering: pixelated;
+}
+
+@media (max-width: 690px) { .banner1 { display: none; } }
+@media (max-width: 645px) { .banner2 { display: none; } }
+@media (max-width: 600px) { .banner3 { display: none; } }
+@media (max-width: 555px) { .banner4 { display: none; } }
+@media (max-width: 510px) { .banner5 { display: none; } }
+@media (max-width: 465px) { .banner6 { display: none; } }
+@media (max-width: 420px) { .banner7 { display: none; } }
+@media (max-width: 375px) { .banner8 { display: none; } }
+@media (max-width: 330px) { .banner9 { display: none; } }
+@media (max-width: 285px) { .banner10 { display: none; } }
+@media (max-width: 240px) { .banner11 { display: none; } }
+@media (max-width: 195px) { .banner12 { display: none; } }
+@media (max-width: 150px) { .banner13 { display: none; } }
+
+@media (max-width: 480px) {
+    .landscape-only {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    .portrait-only {
+        display: none;
+    }
+}

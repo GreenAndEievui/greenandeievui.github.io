@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body style="overflow-x: hidden;">
+<header style="background-color: var(--header-color); background-image: url('/assets/watercolor.png');">
+
+<div style="max-width: 60em; margin: 0 auto;">
+
+<div style="position: relative; margin-top: 1em">
+    <img style="float: left;width: 64px" src="/assets/pfp.png">
+    <h2 style="margin: 0 1em;">Evie<span class=name>&nbsp;</span></h2>
+
+<code style="font-size: 1rem;">
+<div style="margin-top: 2px; margin-left: 1em;margin-bottom: -1em;min-height: 00px">
+    <a style="font-weight: 600; margin-right: 2em" href="/">Home</a>
+    <a style="font-weight: 600; margin-right: 2em" href="/blog/">Blog</a>
+    <a style="font-weight: 600; margin-right: 2em" href="https://github.com/evie-calico">GitHub</a>
+    <div style="display: flex;position: relative; left: 5em;top: -5px; overflow: hidden; white-space: nowrap;">
+    <img class="banner13 header-icon" src="/assets/banner/luvui.png"/>
+    <img class="banner12 header-icon" src="/assets/banner/apple.png"/>
+    <img class="banner11 header-icon" src="/assets/banner/scarf.png"/>
+    <img class="banner10 header-icon" src="/assets/banner/aris.png"/>
+    <img class="banner9 header-icon" src="/assets/banner/pear.png"/>
+    <img class="banner8 header-icon" src="/assets/banner/bastet.png"/>
+    <img class="banner7 header-icon" src="/assets/banner/reviver_seed.png"/>
+    <img class="banner6 header-icon" src="/assets/banner/twig.png"/>
+    <img class="banner5 header-icon" src="/assets/banner/purefruit.png"/>
+    <img class="banner4 header-icon" src="/assets/banner/luvui-sleep.png"/>
+    <img class="banner3 header-icon" src="/assets/banner/pepper.png"/>
+    <img class="banner2 header-icon" src="/assets/banner/aloe.png"/>
+    <img class="banner1 header-icon" src="/assets/banner/kangaroo.h.png"/>
+    </div>
+</div>
+</code>
+</div>
+</div>
+</header>
+
+<div style="min-height: 120px">
+</div>
+<head>
+<title>Evie</title>
+<style>
+    .image {
+        float: left;
+        padding: 5px;
+        max-width: 360px;
+        height: auto;
+    }
+    .image-row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+</head>
+<p>Hi! I'm Evie.
+I'm currently working on a game called <a href="https://github.com/evie-calico/esprit">esprit</a> and a complementary scripting language,
+<a href="https://github.com/evie-calico/evscript">evscript</a>.
+You can find a collection of my projects below.</p>
+<h1><a href="https://github.com/evie-calico/esprit">Esprit</a></h1>
+<p>A Game Boy &quot;Mystery Dungeon&quot; engine, making extensive use of the
+console's limited video capabilities. Features 8 independant entities which
+each have a unique color palette and set of graphics, procedurally
+generated levels, a powerful variable-width-font engine which makes text
+compact and easy to read, and a custom scripting language created from
+scratch for this project, evscript.</p>
+<div class=image-row>
+<img class=image src="assets/esprit-title.png">
+<img class=image src="assets/esprit-gameplay.png">
+</div>
+<h3><a href="https://github.com/evie-calico/evscript">evscript</a></h3>
+<p>A simple yet versatile programming language originally made for the
+Game Boy. Intended to replace the macro based scripting languages often
+used in assembly projects, evscript provides control flow structures,
+variable declarations and operators, and compact bytecode output which
+saves space compared to C or even some assembly code.</p>
+<div class=image-row>
+<img class=image src="assets/evscript-source.png">
+<video class=image loop controls>
+<source src="assets/evscript-hello-world.mp4" type="video/mp4">
+</video>
+</div>
+<h3><a href="https://github.com/evie-calico/evunit">evunit</a></h3>
+<p>A unit testing program for Game Boy ROMs.
+Configure tests using TOML files and instantly execute them with the built-in CPU emulator.</p>
+<div class=image-row>
+<img class=image src="assets/rgbunit-results.png">
+</div>
+<h3><a href="https://github.com/evie-calico/regex.inc">regex.inc</a></h3>
+<p>regex.inc is a regex parser written in rgbasm.
+Its primary use is picking apart the arguments to complex macros, but feel free to get creative.</p>
+<h3><a href="https://github.com/evie-calico/gb-valloc-lib">Game Boy VRAM Allocation Library</a></h3>
+<p>A simple Game Boy library for allocating video memory at runtime. Valloc
+uses a very basic block pattern which takes advantage of the fact that
+VRAM tiles can be addressed using a single byte.</p>
+<h3><a href="https://github.com/evie-calico/gb-sprobj-lib">Game Boy Sprite Objects Library</a></h3>
+<p>A small, lightweight library meant to facilitate the rendering of
+sprite objects, including Shadow OAM and OAM DMA, single-entry &quot;simple&quot;
+sprite objects, and Q12.4 fixed-point position metasprite rendering.</p>
+
+</div>
+</body>
+</html>
